@@ -23,7 +23,6 @@
     ></script>
 
     <title>login</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
   </head>
 
   <body>
@@ -128,39 +127,30 @@
         </div>
         <form action="#" class="form">
           <div class="form-content">
-            <form method="post">
-              <div class="login-form">
-                <div class="title">login</div>
-                <div class="input-boxes">
-                  <div class="input-box">
-                    <input
-                      type="text"
-                      placeholder="E-mail"
-                      id="login_email"
-                      required
-                      pattern=".*.com"
-                    />
-                  </div>
-                  <div class="input-box">
-                    <input
-                      type="password"
-                      placeholder="password"
-                      id="login_password"
-                      required
-                    />
-                  </div>
-                  <div class="text"><a href="#">Forgot password</a></div>
-                  <div class="button input-box">
-                    <input type="submit" value="Login" id="login_button" />
-                  </div>
-                  <div class="text">
-                    Don't have an account<label for="flip"> Signup now</label>
-                  </div>
+            <div class="login-form">
+              <div class="title">login</div>
+              <div class="input-boxes">
+                <div class="input-box">
+                  <input type="text" placeholder="E-mail" id="login_email" />
+                </div>
+                <div class="input-box">
+                  <input
+                    type="password"
+                    placeholder="password"
+                    id="login_password"
+                  />
+                </div>
+                <div class="text"><a href="#">Forgot password</a></div>
+                <div class="button input-box">
+                  <input type="submit" value="Login" id="login_button" />
+                </div>
+                <div class="text">
+                  Don't have an account<label for="flip"> Signup now</label>
                 </div>
               </div>
-            </form>
+            </div>
 
-            <div class="signup-form" method="post">
+            <div class="signup-form">
               <div class="title">Signup</div>
               <div class="input-boxes">
                 <div class="input-box">
@@ -168,24 +158,16 @@
                     type="text"
                     placeholder="Your names"
                     id="signup_name"
-                    required
                   />
                 </div>
                 <div class="input-box">
-                  <input
-                    type="text"
-                    placeholder="E-mail"
-                    id="signup_email"
-                    required
-                    pattern=".*.com"
-                  />
+                  <input type="text" placeholder="E-mail" id="signup_email" />
                 </div>
                 <div class="input-box">
                   <input
                     type="password"
                     placeholder="password"
                     id="singup_password"
-                    required
                   />
                 </div>
                 <div class="button input-box">
@@ -241,33 +223,17 @@
 
         <!-- ............................................. -->
 
-        <div class="footer-detail">
-          <div class="middle">
-            <h3>Contact us</h3>
-            <ul>
-              <li>Email:kareraolivier@gmail.com</li>
-              <li>Tel:+250788888443</li>
-              <li>Phone:+25073000777</li>
-            </ul>
-            <h3>E-mail us</h3>
-            <form method="post">
-              <input
-                type="text"
-                placeholder="E-mail....."
-                id="user_email"
-                required
-                pattern=".*.com"
-              />
-              <input
-                type="text"
-                placeholder="Message....."
-                class="Message"
-                id="user_emailMessage"
-                required
-              />
-              <button class="button" id="Button">send</button>
-            </form>
-          </div>
+        <div class="footer-detail middle">
+          <h3>Contact us</h3>
+          <ul>
+            <li>Email:kareraolivier@gmail.com</li>
+            <li>Tel:+250788888443</li>
+            <li>Phone:+25073000777</li>
+          </ul>
+          <h3>E-mail us</h3>
+          <input type="text" placeholder="E-mail....." />
+          <input type="text" placeholder="Message....." class="Message" />
+          <button class="button">send</button>
         </div>
 
         <!-- ......................................................... -->
@@ -291,10 +257,8 @@
             ></iframe>
           </div>
           <div class="subscribe">
-            <form method="post">
-              <input type="text" placeholder="Subscribe....." required />
-              <button class="button">Subscribe</button>
-            </form>
+            <input type="text" placeholder="Subscribe....." />
+            <button class="button">Subscribe</button>
           </div>
         </div>
       </div>
@@ -305,34 +269,17 @@
 
     <!-- ................firebase.................... -->
 
-    <script
-      defer
-      src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"
-    ></script>
-    <script
-      defer
-      src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"
-    ></script>
-    <script
-      defer
-      src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"
-    ></script>
-    <script
-      defer
-      src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"
-    ></script>
-    <script defer src="/dashboard/js/configuration.js"></script>
-    <script defer src="/dashboard/js/login.js"></script>
-    <script defer src="/dashboard/js/email.js"></script>
-    <script defer src="/js/index.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
+    <script src="/dashboard/js/login.js"></script>
   </body>
   <script
-    defer
     src="https://kit.fontawesome.com/yourcode.js"
     crossorigin="anonymous"
   ></script>
   <script
-    defer
     src="https://kit.fontawesome.com/edf035d6ec.js"
     crossorigin="anonymous"
   ></script>

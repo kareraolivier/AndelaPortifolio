@@ -1,4 +1,3 @@
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -14,7 +13,7 @@
     <title>portifolio</title>
   </head>
   <body>
-    <header class="header header-color">
+    <header class="header">
       <div>
         <input type="checkbox" name="" id="check">
         <label for="check" class="checkbtn">
@@ -28,8 +27,8 @@
           <!-- <div class="menu search">
             <input class="serch-nosubmit" type="search" placeholder="Search...">
           </div> -->
-          <div class="menu" id="Home"> <a class="nav-link active" id="menu"  onClick="hideMenu()" href="#Home1">Home</a></div>
-          <div class="menu"> <a class="nav-link " id="menu"  onClick="hideMenu()" href="#About">About</a></div>
+          <div class="menu" id="Home"> <a class="nav-link" id="menu"  onClick="hideMenu()" href="#Home">Home</a></div>
+          <div class="menu"> <a class="nav-link" id="menu"  onClick="hideMenu()" href="#About">About</a></div>
           <div class="menu"> <a class="nav-link" id="menu"  onClick="hideMenu()" href="#Project">Project</a></div>
           <div class="menu"> <a class="nav-link" id="menu"  onClick="hideMenu()" href="#Blog">Blog</a></div>
           <div class="menu"> <a class="nav-link" id="menu"  onClick="hideMenu()" href="#Contact">Contact</a></div>
@@ -37,7 +36,7 @@
         </div>
       </div>
     </header>
-    <div class="home" id ="Home1">
+    <div class="home">
       <div class="home-photo">
         <img src="/image/man.png" alt="me" class="image" />
       </div>
@@ -330,23 +329,9 @@
           <li>Phone:+25073000777</li>
         </ul>
         <h3>E-mail us</h3>
-         <form method="post">
-              <input
-                type="text"
-                placeholder="E-mail....."
-                id="user_email"
-                required
-                pattern=".*.com"
-              />
-              <input
-                type="text"
-                placeholder="Message....."
-                class="Message"
-                id="user_emailMessage"
-                required
-              />
-              <button class="button" id="Button">send</button>
-            </form>
+        <input type="text" placeholder="E-mail.....">
+        <input type="text" placeholder="Message....." class="Message">
+        <button class="button">send</button>
       </div>
 </div>
       <!-- ......................................................... -->
@@ -365,10 +350,8 @@
         
       </div>
       <div class="subscribe">
-         <form method="post">
-        <input type="text" placeholder="Subscribe....." required>
+        <input type="text" placeholder="Subscribe.....">
         <button class="button">Subscribe</button>
-      </form>
       </div>
       </div>
       </div>
@@ -380,29 +363,36 @@
    
   <!-- ................firebase.................... -->
 
-<script
-      defer
-      src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"
-    ></script>
-    <script
-      defer
-      src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"
-    ></script>
-    <script
-      defer
-      src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"
-    ></script>
-    <script
-      defer
-      src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"
-    ></script>
-<script defer src="/dashboard/js/configuration.js"></script>
-<script defer src="/dashboard/js/email.js"></script>
-<script defer src="/js/index.js"></script>
 
+
+  
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyD-oMWkRdHoz9fUVm_upJy_O9lmGlyQuog",
+    authDomain: "kareraportfolio-6f3a7.firebaseapp.com",
+    projectId: "kareraportfolio-6f3a7",
+    storageBucket: "kareraportfolio-6f3a7.appspot.com",
+    messagingSenderId: "666133715543",
+    appId: "1:666133715543:web:cb969abf9a8d222cc02112",
+    measurementId: "G-Z9M2E9F1D7"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
 </script>
 
   </body>
+ 
+  <script src="/js/index.js"></script>
   <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/edf035d6ec.js" crossorigin="anonymous"></script>
 </html>

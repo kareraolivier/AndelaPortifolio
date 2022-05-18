@@ -17,7 +17,7 @@
 .dashboard_menu {
   padding: 40px 10px 10px 40px;
   width: 25%;
-  height: 35.55rem;
+  height: 35rem;
   background-color: rgba(15, 25, 111, 1);
   color: white;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
@@ -28,117 +28,10 @@
   margin: 20px;
   font-weight: 400;
   display: block;
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
 }
 .dashboard_containt {
-  width: 70%;
-  padding: 30px 0 0 20px;
-  height: 35.55rem;
-  overflow: scroll;
-}
-.article .articleTitle {
-  height: 3rem;
-  width: 20rem;
-  font-size: 20px;
-  margin: 5px 10px 5px 10px;
-  border: solid rgba(15, 25, 111, 1);
-  border-radius: 5px;
-  text-indent: 1.5ch;
-}
-.article .articleButton {
-  color: white;
-  background-color: rgba(15, 25, 111, 1);
-  height: 3rem;
-  width: 7rem;
-  border: none;
-  border-radius: 5px;
-  font-weight: 500;
-  font-size: 20px;
-  margin-top: 3px;
-  cursor: pointer;
-}
-.getArticle {
-  width: 100%;
-  height: 13rem;
-  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 5px;
-}
-.getArticle .articleTitle {
-  width: 100%;
-  padding: 10px;
-}
-.getArticle .articleBody {
-  width: 100%;
-  padding: 10px;
-  height: 5rem;
-  overflow: scroll;
-}
-.getArticle .articleButton {
-  color: white;
-  background-color: rgba(15, 25, 111, 1);
-  height: 2.5rem;
-  width: 6rem;
-  border: none;
-  border-radius: 5px;
-  font-weight: 500;
-  font-size: 20px;
-  margin-bottom: 0;
-  cursor: pointer;
-  float: right;
-  margin: 4px;
-  padding: 5px 5px 5px 5px;
-}
-
-/* ............email....................... */
-.email {
-  height: 33rem;
-}
-.table {
-  border-collapse: collapse;
-  width: 100%;
-}
-.tableContaint {
-  height: 90%;
-  overflow: scroll;
-}
-.table th {
-  padding-top: 13px;
-  padding-left: 10px;
-  padding-bottom: 13px;
-  text-align: left;
-  background-color: rgba(15, 25, 111, 1);
-  color: white;
-}
-.table tr {
-  padding-top: 13px;
-  padding-left: 10px;
-  padding-bottom: 13px;
-  text-align: left;
-  overflow: hidden;
-  border: solid black;
-}
-.table tr:nth-child(even) {
-  background-color: hsl(216, 64%, 89%);
-}
-.table td {
-  padding-top: 11px;
-  padding-left: 10px;
-  padding-bottom: 11px;
-  cursor: pointer;
-  overflow: hidden;
-  overflow-y: hidden;
-  border: solid black;
-}
-.table .low .column1 {
-  width: 20%;
-}
-.table .low .column2 {
-  width: 30%;
-}
-.table .low .column3 {
-  width: 50%;
-  border: solid black;
+  width: 60%;
+  padding: 5px 0 0 20px;
 }

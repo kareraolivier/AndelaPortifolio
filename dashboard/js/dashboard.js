@@ -1,3 +1,13 @@
+const firebaseConfig = {
+  apiKey: "AIzaSyD-oMWkRdHoz9fUVm_upJy_O9lmGlyQuog",
+  authDomain: "kareraportfolio-6f3a7.firebaseapp.com",
+  projectId: "kareraportfolio-6f3a7",
+  storageBucket: "kareraportfolio-6f3a7.appspot.com",
+  messagingSenderId: "666133715543",
+  appId: "1:666133715543:web:cb969abf9a8d222cc02112",
+  measurementId: "G-Z9M2E9F1D7",
+};
+
 const view_profile = document.getElementById("view_profile");
 const view_article = document.getElementById("view_article");
 const view_comment = document.getElementById("view_comment");
@@ -87,7 +97,7 @@ const comment = () => {
 };
 view_comment.addEventListener("click", comment);
 
-const emailKarera = () => {
+const email = () => {
   const dsArticle = document.getElementById("dsArticle");
   const dsProfile = document.getElementById("dsProfile");
   const dsViewArticle = document.getElementById("dsViewArticle");
@@ -102,7 +112,7 @@ const emailKarera = () => {
   dsEmail.style.display = "block";
   dsSubscribers.style.display = "none";
 };
-view_email.addEventListener("click", emailKarera);
+view_email.addEventListener("click", email);
 
 const subscription = () => {
   const dsArticle = document.getElementById("dsArticle");
