@@ -20,6 +20,8 @@ const signup = async (e) => {
   })
     .then((res) => res.json())
     .then((json) => console.log(json));
+  document.getElementById("login_email").value = "";
+  document.getElementById("login_password").value = "";
 };
 document.getElementById("signup_button").addEventListener("click", signup);
 
@@ -45,7 +47,8 @@ const login = async (e) => {
       const { token } = json;
       localStorage.setItem("token", JSON.stringify({ token: token }));
     });
-
+  document.getElementById("login_email").value = "";
+  document.getElementById("login_password").value = "";
   location.href = "../../dashboard/html/dashboard.html";
 };
 document.getElementById("login_button").addEventListener("click", login);

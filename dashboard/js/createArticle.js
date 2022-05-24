@@ -45,9 +45,9 @@ fetch("https:/karerandela.herokuapp.com/api/v1/blogs", {
             `
           <div class="getArticle">
               <h1 class="articleTitle">${blog.title}</h1>
-              <p class="articleBody">
+              
                 ${blog.blog.substring(0, 400)}
-              </p>
+             
                <button id="Edit" class="Edit articleButton" 
                onClick=getBlogId('${blog._id}')>Edit</button>
                <button id="Delete" class="Delete articleButton"onclick="getArticleId('${

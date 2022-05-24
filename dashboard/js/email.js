@@ -14,7 +14,7 @@ fetch("https:/karerandela.herokuapp.com/api/v1/emails", {
         .map(
           (email) => `
          
-         <table class="table"onclick="getId('${email._id}')">
+         <table class="table" onclick="getId('${email._id}')">
          
             <tr id="email_id" class="low lowShadow">
               <td class="colomn1">${email.createAt
